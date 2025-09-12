@@ -1,0 +1,1 @@
+{"root":["./app/app.vue","./app/components/todo/todoapp.vue","./app/components/todo/todoinput.vue","./app/components/todo/todolist.vue","./app/pages/index.vue","./shims-vue.d.ts"],"errors":true,"version":"5.9.2"}

@@ -1,0 +1,3 @@
+<template>
+ <TodoApp/>
+</template>
