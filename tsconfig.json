@@ -1,5 +1,4 @@
 {
-  // https://nuxt.com/docs/guide/concepts/typescript
   "compilerOptions": {
     "target": "ESNext",
     "module": "ESNext",
@@ -11,20 +10,27 @@
     "skipLibCheck": true,
     "isolatedModules": true,
     "useDefineForClassFields": true,
-    "types": ["vite/client"],
+    "types": [
+      "vite/client",
+      "@nuxt/schema"
+    ],
     "baseUrl": ".",
     "paths": {
-      "@/*": ["app/*"]   // ✅ changed from src/* to app/*
+      "@/*": ["./*"]
     }
   },
   "include": [
-    "app/**/*.ts",
-    "app/**/*.d.ts",
-    "app/**/*.tsx",
-    "app/**/*.vue",
-    "app/shims-vue.d.ts"   // ✅ still keep this
+    "**/*.ts",
+    "**/*.d.ts",
+    "**/*.tsx",
+    "**/*.vue",
+    "nuxt.config.ts",
+    "app.vue",
+    "shims-vue.d.ts"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    ".nuxt",
+    "dist"
   ]
 }
