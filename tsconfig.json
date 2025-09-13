@@ -1,19 +1,7 @@
 {
+  "extends": "./.nuxt/tsconfig.json",
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
-    "moduleResolution": "Bundler",
     "strict": true,
-    "jsx": "preserve",
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "skipLibCheck": true,
-    "isolatedModules": true,
-    "useDefineForClassFields": true,
-    "types": [
-      "vite/client",
-      "@nuxt/schema"
-    ],
     "baseUrl": ".",
     "paths": {
       "@/*": ["./*"]
