@@ -27,8 +27,8 @@ const onDebounce = (value:string)=>{
 </script>
 
 <template>
-    <div class="w-full h-full flex flex-col gap-4 justify-between">
-        <div class="flex flex-row w-full h-[15vh] bg-blue-100 gap-2 justify-around mb-5">
+    <div class="w-full min-h-screen">
+        <div class="flex flex-wrap w-full h-[15vh] bg-blue-100 gap-2 justify-around mb-5">
             <div class="text-3xl underline font-[12px] cursor-pointer" @click="updateActive('todo')">TodoApp</div>
             <div class="text-3xl underline font-[12px] cursor-pointer" @click="updateActive('tictac')">TicTacToe</div>
             <div class="text-3xl underline font-[12px] cursor-pointer" @click="updateActive('autocomplete')">
@@ -38,6 +38,7 @@ const onDebounce = (value:string)=>{
             <div class="text-3xl underline font-[12px] cursor-pointer" @click="updateActive('modal')">Modal</div>
             <div class="text-3xl underline font-[12px] cursor-pointer" @click="updateActive('form')">Form</div>
             <div class="text-3xl underline font-[12px] cursor-pointer" @click="updateActive('drag')">Drag and Drop</div>
+            <div class="text-3xl underline font-[12px] cursor-pointer" @click="updateActive('counter')">Counter</div>
         </div>
         <div class="overflow-y-scroll bg-amber-100 max-h-[80vh]">
 
@@ -47,6 +48,7 @@ const onDebounce = (value:string)=>{
             <ItemList v-if="active == 'pagination'"/>
             <FormValidation v-if="active== 'form'"/>
             <DragAndDrop v-if="active == 'drag'"/>
+            <Counter v-if="active == 'counter'"/>
     
     
             <template v-if="active=='modal'">
