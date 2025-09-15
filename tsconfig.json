@@ -5,7 +5,8 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./*"]
-    }
+    }, 
+    "types":["nuxt"]
   },
   "include": [
     "**/*.ts",
